@@ -1,0 +1,45 @@
+body {
+  text-align: center;
+  background-color: #212272;
+  width: 100%;
+  overflow: hidden;
+}
+
+.title {
+  font-size: 64px;
+  color: #4286f4;
+  width: 100%;
+}
+
+.footer {
+  color: #99ff8f;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+a:link {
+  color: #22ff8f;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #22ff8f;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #22ff8f;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:active {
+  color: #22ff8f;
+  background-color: transparent;
+  text-decoration: none;
+}
