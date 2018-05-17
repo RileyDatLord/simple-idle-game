@@ -11,7 +11,16 @@
   <header class="center">
     <header class="title">Idle Game</header>
   </header>
-
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+  <script src="js/script.js"></script>
+  <input id="facNameChange" placeholder="Factory Name" onchange="changeName();">
+  <p id="facName">Factory Name Loading...</p>
+  
+  <div id="shop">
+    <h1 id="shoptitle">
+      Item Shop
+    </h1>
+  </div>
   <div class="center">
     <footer class="footer">
       <a href="" class="link">Idle Game</a> made by <a href="http://github.com/rileydatlord" class="link">RileyDatLord</a> with <a id="heart"></a>
@@ -19,7 +28,21 @@
   </div>
   
   <script>
+    var changeName = function() {
+      var changeTo = document.getElementById('facNameChange').value
+      Cookies.set('factory-name', changeTo)
+      factory.innerText = Cookies.get('factory-name')
+    }
     document.getElementById("heart").innerText = "❤"
+    var clicks = Cookies.get('clicks')
+    
+    if (!clicks) {
+      Cookies.set('clicks', 0)
+      Cookies.set('factory-name', "Default Factory");
+      Cookies.set('clickers', 0)
+    }
+    var factory = document.getElementById("facName");
+    factory.innerText = Cookies.get('factory-name');
   </script>
 </body>
 

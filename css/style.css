@@ -5,7 +5,14 @@ body {
   width: 100%;
   overflow: hidden;
 }
-
+p {
+  color: white;
+}
+.shoptitle {
+  font-size: 64px;
+  color: #4286f4;
+  width: 100%;
+}
 .title {
   font-size: 64px;
   color: #4286f4;
